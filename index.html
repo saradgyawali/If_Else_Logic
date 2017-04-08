@@ -1,7 +1,9 @@
-<!doctype html>
+<!--DOCTYPE html-->
 <html>
 <head>
 	<title>Counting Fingers</title>
+
+	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 
@@ -9,35 +11,6 @@
 	<input type="text" id="numEnter">
 	<button id="pressEnter">Submit</button>
 
-	<script type="text/javascript">
-
-//When the button is clicked
-	document.getElementById("pressEnter").onclick = function() {
-
-//Math.random() returns value from 0-1
-		var generatedNum = Math.random();
-
-		generatedNum = generatedNum * 6;
-
-//Math.floor returns the  value rounded down to its nearest integer
-		generatedNum = Math.floor(generatedNum);
-
-//Grabs the value from the input and sets it to variable enteredNum
-		var enteredNum = document.getElementById("numEnter").value;
-		
-//Checks if enteredNum equals to generatedNum
-		if (enteredNum == generatedNum) {
-			alert("YOU GOT IT! The number generated was " + generatedNum);
-			console.log(generatedNum);
-		}
-		else {
-			alert("Try Again! The number generated was " + generatedNum);
-		}
-	}
-
-
-
-	</script>
 
 </body>
 </html>
